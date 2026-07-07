@@ -151,12 +151,6 @@ export default function Home() {
                   <span>Learn About Our Integrity</span>
                   <ArrowRight className="w-4 h-4" />
                 </Link>
-                <Link
-                  to="/contact"
-                  className="px-6 py-3 rounded-full bg-white border border-gray-200 hover:bg-gray-50 text-brand-heading font-bold text-xs transition-all duration-300 inline-flex items-center gap-2"
-                >
-                  <span>View Certifications</span>
-                </Link>
               </div>
             </div>
 
