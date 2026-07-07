@@ -58,7 +58,7 @@ export function VideoPlaylistItem({ video, isActive, onClick }: VideoPlaylistIte
   return (
     <div
       onClick={onClick}
-      className={`group relative flex flex-col gap-1.5 sm:gap-2.5 p-1.5 sm:p-2.5 rounded-xl sm:rounded-2xl cursor-pointer transition-all duration-300 border-l-2 sm:border-l-4 flex-1 lg:flex-none lg:w-full min-w-0 ${
+      className={`group relative flex flex-col gap-1.5 sm:gap-2 p-1.5 rounded-xl cursor-pointer transition-all duration-300 border-l-2 sm:border-l-4 flex-1 lg:flex-1 lg:w-full min-w-0 justify-between ${
         isActive
           ? 'bg-white border-l-[#FB8964] shadow-md scale-[1.01]'
           : 'bg-gray-50/60 border-l-transparent hover:bg-white hover:shadow-sm hover:border-l-gray-300'
@@ -116,7 +116,7 @@ interface VideoPlaylistProps {
 
 export function VideoPlaylist({ videos, activeIndex, onSelect }: VideoPlaylistProps) {
   return (
-    <div className="flex flex-row lg:flex-col gap-1.5 sm:gap-3">
+    <div className="flex flex-row lg:flex-col gap-1.5 sm:gap-3 h-full justify-between">
       {videos.map((video, index) => (
         <VideoPlaylistItem
           key={video.id}
@@ -347,9 +347,9 @@ export default function VideoSection() {
       </div>
 
       <div className="flex flex-col lg:flex-row gap-6 w-full items-stretch">
-        {/* Playlist: Left (20% width on desktop) */}
-        <div className="w-full lg:w-[22%] flex-shrink-0 flex flex-col justify-start">
-          <div className="bg-gradient-to-br from-white to-gray-50 border border-gray-100 rounded-3xl p-3 shadow-sm overflow-hidden">
+        {/* Playlist: Left (15% width on desktop) */}
+        <div className="w-full lg:w-[15%] flex-shrink-0 flex flex-col justify-stretch">
+          <div className="bg-gradient-to-br from-white to-gray-50 border border-gray-100 rounded-3xl p-3 shadow-sm overflow-hidden h-full">
             <VideoPlaylist
               videos={DEFAULT_VIDEOS}
               activeIndex={activeIndex}
@@ -358,8 +358,8 @@ export default function VideoSection() {
           </div>
         </div>
 
-        {/* Video Player: Right (80% width on desktop) */}
-        <div className="w-full lg:w-[78%] flex-grow-0 flex-shrink-0">
+        {/* Video Player: Right (85% width on desktop) */}
+        <div className="w-full lg:w-[85%] flex-grow-0 flex-shrink-0">
           <div className="h-full flex flex-col justify-between">
             <VideoPlayer key={activeVideo.id} video={activeVideo} />
           </div>
