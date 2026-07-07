@@ -1,0 +1,82 @@
+{
+  "entities": {
+    "category": {
+      "title": "Category",
+      "description": "Product category definition",
+      "type": "object",
+      "properties": {
+        "name": { "type": "string" },
+        "slug": { "type": "string" },
+        "description": { "type": "string" },
+        "image": { "type": "string" }
+      },
+      "required": ["name", "slug"]
+    },
+    "product": {
+      "title": "Product",
+      "description": "Ear piercing product definition and detailed fields",
+      "type": "object",
+      "properties": {
+        "name": { "type": "string" },
+        "slug": { "type": "string" },
+        "category": { "type": "string" },
+        "description": { "type": "string" },
+        "features": { "type": "array" },
+        "specifications": { "type": "object" },
+        "applications": { "type": "array" },
+        "downloads": { "type": "array" },
+        "images": { "type": "array" },
+        "thumbnail": { "type": "string" },
+        "status": { "type": "string", "enum": ["active", "archived"] },
+        "featured": { "type": "boolean" },
+        "createdAt": { "type": "string" },
+        "updatedAt": { "type": "string" }
+      },
+      "required": ["name", "slug", "category", "description"]
+    },
+    "galleryItem": {
+      "title": "GalleryItem",
+      "description": "A media asset showing QPP applications and setups",
+      "type": "object",
+      "properties": {
+        "title": { "type": "string" },
+        "image": { "type": "string" },
+        "category": { "type": "string" },
+        "description": { "type": "string" }
+      },
+      "required": ["title", "image", "category"]
+    },
+    "downloadItem": {
+      "title": "DownloadItem",
+      "description": "A downloadable brochure, manual, or sheet",
+      "type": "object",
+      "properties": {
+        "title": { "type": "string" },
+        "description": { "type": "string" },
+        "fileSize": { "type": "string" },
+        "fileType": { "type": "string" },
+        "url": { "type": "string" },
+        "category": { "type": "string" }
+      },
+      "required": ["title", "url", "category"]
+    }
+  },
+  "firestore": {
+    "categories/{categoryId}": {
+      "schema": "category",
+      "description": "Product categories in Firestore"
+    },
+    "products/{productId}": {
+      "schema": "product",
+      "description": "Individual ear piercing products in Firestore"
+    },
+    "gallery/{galleryId}": {
+      "schema": "galleryItem",
+      "description": "Gallery showcase items in Firestore"
+    },
+    "downloads/{downloadId}": {
+      "schema": "downloadItem",
+      "description": "Downloadable brochures and guides in Firestore"
+    }
+  }
+}

@@ -1,0 +1,39 @@
+rules_version = '2';
+service cloud.firestore {
+  match /databases/{database}/documents {
+    
+    // 1. Global Safety Net - default deny
+    match /{document=**} {
+      allow read, write: if false;
+    }
+    
+    // Helper function to validate ID
+    function isValidId(id) { 
+      return id is string && id.size() <= 128 && id.matches('^[a-zA-Z0-9_\\-]+$'); 
+    }
+
+    // 2. Categories Collection
+    match /categories/{categoryId} {
+      allow get, list: if true;
+      allow write: if false; // Read-only public catalog
+    }
+
+    // 3. Products Collection
+    match /products/{productId} {
+      allow get, list: if true;
+      allow write: if false; // Read-only public catalog
+    }
+
+    // 4. Gallery Collection
+    match /gallery/{galleryId} {
+      allow get, list: if true;
+      allow write: if false; // Read-only public catalog
+    }
+
+    // 5. Downloads Collection
+    match /downloads/{downloadId} {
+      allow get, list: if true;
+      allow write: if false; // Read-only public catalog
+    }
+  }
+}
