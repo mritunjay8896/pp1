@@ -12,10 +12,11 @@
     <script type="module" src="/src/main.tsx"></script>
     <script>
       (function () {
-        const redirect = sessionStorage.getItem('gh-pages-redirect');
-        if (redirect) {
-          sessionStorage.removeItem('gh-pages-redirect');
-          window.location.replace(redirect);
+        const params = new URLSearchParams(window.location.search);
+        const redirectPath = params.get('p');
+        if (redirectPath) {
+          const normalizedPath = redirectPath.startsWith('/') ? redirectPath : '/' + redirectPath;
+          window.history.replaceState(null, '', normalizedPath);
         }
       })();
     </script>
