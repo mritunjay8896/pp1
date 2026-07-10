@@ -20,12 +20,10 @@ export default function Footer() {
           {/* Company Brief Column */}
           <div className="lg:col-span-4 space-y-6">
             <Link to="/" className="flex items-center gap-3">
-              <div className="w-10 h-10 bg-brand-primary text-white flex items-center justify-center rounded-xl font-extrabold text-lg shadow-sm">
-                Q
-              </div>
+              
               <div>
-                <span className="font-extrabold text-lg text-brand-heading tracking-tight">QPP India</span>
-                <p className="text-[9px] uppercase font-bold tracking-widest text-brand-primary">Authorized Distributor</p>
+                <span className="font-extrabold text-lg text-brand-heading tracking-tight">Precise Piercing Product India LLP</span>
+                <p className="text-[9px] uppercase font-bold tracking-widest text-brand-primary"> OPP Authorized Distributor</p>
               </div>
             </Link>
             
@@ -102,7 +100,7 @@ export default function Footer() {
                 <MapPin className="w-5 h-5 text-brand-primary mt-0.5 flex-shrink-0" />
                 <span className="leading-relaxed text-brand-paragraph text-xs">
                   <strong className="text-brand-heading font-bold block mb-1">Precise Piercing Product India LLP</strong>
-                  <span className="text-[10px] uppercase font-extrabold tracking-wider text-brand-muted block mb-2">Import export company in Bengaluru, Karnataka</span>
+                  <span className="text-[10px] uppercase font-extrabold tracking-wider text-brand-muted block mb-2">Company Office in Bengaluru, Karnataka</span>
                   XGXJ+G6, 8/213 1st Main Road, 2nd Cross Rd, near shiva temple, Kaveri Nagar, Kamala Nagar, Bengaluru, Karnataka 560096
                 </span>
               </li>
