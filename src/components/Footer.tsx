@@ -28,7 +28,7 @@ export default function Footer() {
             </Link>
             
             <p className="leading-relaxed text-brand-paragraph max-w-sm text-xs">
-              <strong>Precise Piercing Products India LLP </strong> is your trusted partner for high-quality, safe, and reliable ear-piercing solutions. We specialize in the distribution of premium ear piercing guns and sterile piercing studs designed for maximum precision and safety.
+              <strong>Precise Piercing Products India LLP</strong> is your trusted partner for high-quality, safe, and reliable ear-piercing solutions. We specialize in the distribution of premium ear piercing guns and sterile piercing studs designed for maximum precision and safety.
             </p>
 
             <div className="flex items-center gap-4">
