@@ -6,7 +6,7 @@
 import React, { useState } from 'react';
 import { Link, useLocation } from 'react-router-dom';
 import { Menu, X, Shield, PhoneCall } from 'lucide-react';
-const logoImage = '/images/logo.png';
+import logoImage from '../assets/images/regenerated_image_1783357511597.png';
 
 export default function Header() {
   const [isOpen, setIsOpen] = useState(false);
