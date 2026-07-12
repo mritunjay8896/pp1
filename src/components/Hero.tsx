@@ -10,12 +10,9 @@ import { Autoplay, Pagination, Keyboard } from 'swiper/modules';
 import { ShieldCheck, Sparkles, ChevronRight, ArrowRight } from 'lucide-react';
 import ProductSvg from './ProductSvg';
 
-// @ts-ignore
-import slide1Img from '../assets/images/mother_baby_gentle_1783102929882.jpg';
-// @ts-ignore
-import slide2Img from '../assets/images/happy_friends_piercing_1783102984797.jpg';
-// @ts-ignore
-import slide3Img from '../assets/images/community_care_collage_1783102999209.jpg';
+const slide1Img = '/images/mother_baby_gentle.jpg';
+const slide2Img = '/images/happy_friends_piercing.jpg';
+const slide3Img = '/images/community_care_collage.jpg';
 
 // Import Swiper styles
 import 'swiper/css';
