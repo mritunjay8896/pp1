@@ -5,6 +5,13 @@ import {defineConfig} from 'vite';
 
 export default defineConfig(() => {
   return {
+    base: "/pp1/", // <--- Add this line
+    plugins: [react(), tailwindcss()],
+    resolve: {
+      alias: {
+        '@': path.resolve(__dirname, '.'),
+      },
+    },
     plugins: [react(), tailwindcss()],
     resolve: {
       alias: {
