@@ -6,6 +6,7 @@
 import React, { useState } from 'react';
 import { Link, useLocation } from 'react-router-dom';
 import { Menu, X, Shield, PhoneCall } from 'lucide-react';
+// Import the optimized logo asset for Precise Piercing Product India LLP
 import logoImage from '../assets/images/regenerated_image_1783357511597.png';
 
 export default function Header() {
