@@ -21,7 +21,7 @@ import 'swiper/css/pagination';
 export default function Hero() {
   const slides = [
     {
-      badge: "Patented Squeeze Innovation",
+      badge: "Patented Squeeze Innovations",
       title: "The Silent, Precise Ear Piercing System",
       description: "The World's No.1 Patented Pull & Click Technology. Completely eliminates noisy spring triggers, preventing pediatric panic and delivering unmatched alignment precision.",
       ctaPrimary: "Explore Instrument",
