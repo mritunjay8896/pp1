@@ -45,6 +45,24 @@ const DEFAULT_VIDEOS: VideoData[] = [
     youtubeId: 'bfDzEyjjGHE',
     thumbnailUrl: 'https://img.youtube.com/vi/bfDzEyjjGHE/hqdefault.jpg',
   },
+  {
+    id: '4',
+    title: 'Traditional how to install',
+    description: 'Step-by-step instruction on how to correctly prepare, cock, and install the adapter on the traditional piercing gun.',
+    duration: '0:24',
+    videoUrl: 'https://raw.githubusercontent.com/mritunjay8896/images/main/Traditional%20how%20to%20install.mp4',
+    youtubeId: '',
+    thumbnailUrl: '/src/assets/images/traditional_install_1783869311319.jpg',
+  },
+  {
+    id: '5',
+    title: 'Traditional - how to remove',
+    description: 'Safety instructions on how to properly remove the single-use adapter from the piercing gun after use.',
+    duration: '0:16',
+    videoUrl: 'https://raw.githubusercontent.com/mritunjay8896/images/main/Traditional%20-%20how%20to%20remove.mp4',
+    youtubeId: '',
+    thumbnailUrl: '/src/assets/images/traditional_remove_1783869326346.jpg',
+  },
 ];
 
 interface VideoPlaylistItemProps {
@@ -58,14 +76,14 @@ export function VideoPlaylistItem({ video, isActive, onClick }: VideoPlaylistIte
   return (
     <div
       onClick={onClick}
-      className={`group relative flex flex-col gap-1.5 sm:gap-2 p-1.5 rounded-xl cursor-pointer transition-all duration-300 border-l-2 sm:border-l-4 flex-1 lg:flex-1 lg:w-full min-w-0 justify-between ${
+      className={`group relative flex flex-col gap-1.5 sm:gap-2 p-1.5 lg:p-2 rounded-xl cursor-pointer transition-all duration-300 border-l-2 sm:border-l-4 flex-shrink-0 w-[120px] sm:w-[150px] lg:w-full min-w-0 justify-between ${
         isActive
-          ? 'bg-white border-l-[#FB8964] shadow-md scale-[1.01]'
+          ? 'bg-white border-l-[#FB8964] shadow-md lg:scale-[1.01]'
           : 'bg-gray-50/60 border-l-transparent hover:bg-white hover:shadow-sm hover:border-l-gray-300'
       }`}
     >
       {/* Thumbnail Container */}
-      <div className="relative w-full aspect-[4/3] rounded-lg sm:rounded-xl overflow-hidden flex-shrink-0 bg-slate-100 border border-gray-100">
+      <div className="relative w-full aspect-[4/3] lg:aspect-video rounded-lg sm:rounded-xl overflow-hidden flex-shrink-0 bg-slate-100 border border-gray-100">
         <img
           src={video.thumbnailUrl}
           alt={video.title}
@@ -87,22 +105,13 @@ export function VideoPlaylistItem({ video, isActive, onClick }: VideoPlaylistIte
       </div>
 
       {/* Text Container */}
-      <div className="flex flex-col min-w-0 px-0.5 pb-0.5">
-        <h4 className={`text-[10px] sm:text-xs font-extrabold line-clamp-2 leading-tight transition-colors duration-300 ${
+      <div className="flex flex-col min-w-0 px-0.5 pb-0.5 lg:pb-0">
+        <h4 className={`text-[10px] sm:text-xs lg:text-[11px] font-extrabold line-clamp-2 leading-tight transition-colors duration-300 ${
           isActive ? 'text-[#FB8964]' : 'text-brand-heading group-hover:text-[#FB8964]'
         }`}>
           {video.title}
         </h4>
-        <div className="flex items-center gap-1 text-[8px] sm:text-[9px] text-[#FB8964] font-bold uppercase tracking-wider mt-1 sm:mt-1.5">
-          {isActive ? (
-            <span className="flex items-center gap-1">
-              <span className="w-0.5 h-0.5 rounded-full bg-[#FB8964] animate-ping" />
-              Active
-            </span>
-          ) : (
-            <span className="text-brand-muted">Up Next</span>
-          )}
-        </div>
+        
       </div>
     </div>
   );
@@ -116,7 +125,7 @@ interface VideoPlaylistProps {
 
 export function VideoPlaylist({ videos, activeIndex, onSelect }: VideoPlaylistProps) {
   return (
-    <div className="flex flex-row lg:flex-col gap-1.5 sm:gap-3 h-full justify-between">
+    <div className="flex flex-row lg:flex-col gap-1.5 sm:gap-3 h-full overflow-x-auto lg:overflow-y-auto pb-1 lg:pb-0 scrollbar-none justify-start">
       {videos.map((video, index) => (
         <VideoPlaylistItem
           key={video.id}
@@ -347,9 +356,9 @@ export default function VideoSection() {
       </div>
 
       <div className="flex flex-col lg:flex-row gap-6 w-full items-stretch">
-        {/* Playlist: Left (15% width on desktop) */}
-        <div className="w-full lg:w-[15%] flex-shrink-0 flex flex-col justify-stretch">
-          <div className="bg-gradient-to-br from-white to-gray-50 border border-gray-100 rounded-3xl p-3 shadow-sm overflow-hidden h-full">
+        {/* Playlist: Left (10% width on desktop) */}
+        <div className="w-full lg:w-[11%] flex-shrink-0 flex flex-col justify-stretch">
+          <div className="bg-gradient-to-br from-white to-gray-50 border border-gray-100 rounded-3xl p-3 shadow-sm overflow-x-auto lg:overflow-hidden h-full">
             <VideoPlaylist
               videos={DEFAULT_VIDEOS}
               activeIndex={activeIndex}
@@ -358,8 +367,8 @@ export default function VideoSection() {
           </div>
         </div>
 
-        {/* Video Player: Right (85% width on desktop) */}
-        <div className="w-full lg:w-[85%] flex-grow-0 flex-shrink-0">
+        {/* Video Player: Right (90% width on desktop) */}
+        <div className="w-full lg:w-[91%] flex-grow-0 flex-shrink-0">
           <div className="h-full flex flex-col justify-between">
             <VideoPlayer key={activeVideo.id} video={activeVideo} />
           </div>
