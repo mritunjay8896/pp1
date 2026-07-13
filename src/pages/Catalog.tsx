@@ -373,20 +373,30 @@ export default function Catalog() {
                     <div className="w-full aspect-square border border-gray-100 rounded-sm bg-white p-4 relative overflow-hidden flex items-center justify-center transition-all duration-300 hover:border-brand-primary/20">
                       
                       {/* Image 1 (Front View) */}
-                      <img 
-                        src={product.image} 
-                        alt={product.name} 
-                        className="w-auto h-auto max-h-[140px] sm:max-h-[180px] object-contain transition-all duration-500 ease-in-out opacity-100 group-hover:opacity-0 group-hover:scale-95"
-                        referrerPolicy="no-referrer"
+                      <div 
+                        role="img"
+                        aria-label={product.name}
+                        style={{
+                          backgroundImage: `url(${product.image})`,
+                          backgroundPosition: 'center',
+                          backgroundRepeat: 'no-repeat',
+                          backgroundSize: 'contain',
+                        }}
+                        className="w-full h-full max-h-[140px] sm:max-h-[180px] min-h-[140px] sm:min-h-[180px] transition-all duration-500 ease-in-out opacity-100 group-hover:opacity-0 group-hover:scale-95"
                       />
 
                       {/* Image 2 (Back/Alternate View - Absolute Positioned underneath) */}
                       {product.image2 && (
-                        <img 
-                          src={product.image2} 
-                          alt={`${product.name} alternate`} 
-                          className="w-auto h-auto max-h-[140px] sm:max-h-[180px] object-contain transition-all duration-500 ease-in-out absolute opacity-0 scale-95 group-hover:opacity-100 group-hover:scale-100"
-                          referrerPolicy="no-referrer"
+                        <div 
+                          role="img"
+                          aria-label={`${product.name} alternate`}
+                          style={{
+                            backgroundImage: `url(${product.image2})`,
+                            backgroundPosition: 'center',
+                            backgroundRepeat: 'no-repeat',
+                            backgroundSize: 'contain',
+                          }}
+                          className="w-full h-full max-h-[140px] sm:max-h-[180px] min-h-[140px] sm:min-h-[180px] transition-all duration-500 ease-in-out absolute inset-0 m-auto opacity-0 scale-95 group-hover:opacity-100 group-hover:scale-100"
                         />
                       )}
 
@@ -483,21 +493,31 @@ export default function Catalog() {
                 <div className="grid grid-cols-2 gap-4 border border-gray-100 p-4 rounded-xl bg-slate-50/50">
                   <div className="flex flex-col items-center gap-1">
                     <span className="text-[8px] font-black uppercase text-gray-400 tracking-wider">Front View</span>
-                    <img 
-                      src={selectedProduct.image} 
-                      alt={selectedProduct.name} 
-                      className="w-auto h-28 object-contain"
-                      referrerPolicy="no-referrer"
+                    <div 
+                      role="img"
+                      aria-label={selectedProduct.name}
+                      style={{
+                        backgroundImage: `url(${selectedProduct.image})`,
+                        backgroundPosition: 'center',
+                        backgroundRepeat: 'no-repeat',
+                        backgroundSize: 'contain',
+                      }}
+                      className="w-full h-28"
                     />
                   </div>
                   {selectedProduct.image2 ? (
                     <div className="flex flex-col items-center gap-1 border-l border-gray-100/80">
                       <span className="text-[8px] font-black uppercase text-gray-400 tracking-wider">Rear View</span>
-                      <img 
-                        src={selectedProduct.image2} 
-                        alt={`${selectedProduct.name} alternate`} 
-                        className="w-auto h-28 object-contain"
-                        referrerPolicy="no-referrer"
+                      <div 
+                        role="img"
+                        aria-label={`${selectedProduct.name} alternate`}
+                        style={{
+                          backgroundImage: `url(${selectedProduct.image2})`,
+                          backgroundPosition: 'center',
+                          backgroundRepeat: 'no-repeat',
+                          backgroundSize: 'contain',
+                        }}
+                        className="w-full h-28"
                       />
                     </div>
                   ) : (

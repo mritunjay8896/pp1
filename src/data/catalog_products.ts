@@ -13,54 +13,7 @@ export interface CatalogProduct {
 }
 
 export const CATALOG_PRODUCTS: CatalogProduct[] = [
-  {
-    "name": "Bloom Aurora",
-    "image": "https://qpp-ep.com/wp-content/uploads/2023/05/Diamond-daisy-15Y_S-2048x2048.jpg",
-    "image2": "https://qpp-ep.com/wp-content/uploads/2023/05/diamond-daisy-15Y-2048x2048.jpg",
-    "category": "Material",
-    "subCategory": "Gold Plated",
-    "designCategory": "Click Category"
-  },
-  {
-    "name": "Bloom Crystal",
-    "image": "https://qpp-ep.com/wp-content/uploads/2023/05/Diamond-daisy-04Y_S-2048x2048.jpg",
-    "image2": "https://qpp-ep.com/wp-content/uploads/2023/05/Diamond-daisy-04Y-2048x2048.jpg",
-    "category": "Material",
-    "subCategory": "Gold Plated",
-    "designCategory": "Click Category"
-  },
-  {
-    "name": "Bloom Pink",
-    "image": "https://qpp-ep.com/wp-content/uploads/2023/05/Diamond-daisy-10Y_S-2048x2048.jpg",
-    "image2": "https://qpp-ep.com/wp-content/uploads/2023/05/Diamond-daisy-10Yjpg-2048x2048.jpg",
-    "category": "Material",
-    "subCategory": "Gold Plated",
-    "designCategory": "Click Category"
-  },
-  {
-    "name": "Blooming Delight",
-    "image": "https://qpp-ep.com/wp-content/uploads/2023/10/E667CRY.jpg",
-    "image2": "https://qpp-ep.com/wp-content/uploads/2023/10/E667CRY-2.jpg",
-    "category": "Material",
-    "subCategory": "Gold Plated",
-    "designCategory": "Blief Collection"
-  },
-  {
-    "name": "Blooming Petals",
-    "image": "https://qpp-ep.com/wp-content/uploads/2023/10/E518CRY.jpg",
-    "image2": "https://qpp-ep.com/wp-content/uploads/2023/10/E518CRY-2.jpg",
-    "category": "Material",
-    "subCategory": "Gold Plated",
-    "designCategory": "Blief Collection"
-  },
-  {
-    "name": "Brilliant Heart 4mm CZ",
-    "image": "https://qpp-ep.com/wp-content/uploads/2023/10/DCZRO8Y.jpg",
-    "image2": "https://qpp-ep.com/wp-content/uploads/2023/10/DCZRO6Y-2.jpg",
-    "category": "Material",
-    "subCategory": "Gold Plated",
-    "designCategory": "Blief Collection"
-  },
+  
   {
     "name": "Brilliant Heart 5mm CZ",
     "image": "https://qpp-ep.com/wp-content/uploads/2023/10/HCZJE5Y.jpg",
@@ -557,14 +510,7 @@ export const CATALOG_PRODUCTS: CatalogProduct[] = [
     "subCategory": "Stainless Steel",
     "designCategory": "Traditional category"
   },
-  {
-    "name": "Regular Candy",
-    "image": "https://qpp-ep.com/wp-content/uploads/2022/11/RM07Y-S.jpg",
-    "image2": "https://qpp-ep.com/wp-content/uploads/2022/11/RM07Y.jpg",
-    "category": "Material",
-    "subCategory": "Gold Plated",
-    "designCategory": "Click Category"
-  },
+
   {
     "name": "Regular Candy Stainless Steel",
     "image": "https://qpp-ep.com/wp-content/uploads/2022/11/RM04W-S.jpg",
@@ -589,38 +535,9 @@ export const CATALOG_PRODUCTS: CatalogProduct[] = [
     "subCategory": "Stainless Steel",
     "designCategory": "Traditional category"
   },
-  {
-    "name": "Regular Flower",
-    "image": "https://qpp-ep.com/wp-content/uploads/2022/11/RF01Y-S.jpg",
-    "image2": "https://qpp-ep.com/wp-content/uploads/2022/11/RF01Y.jpg",
-    "category": "Material",
-    "subCategory": "Gold Plated",
-    "designCategory": "Click Category"
-  },
-  {
-    "name": "Regular Flower Stainless Steel",
-    "image": "https://qpp-ep.com/wp-content/uploads/2022/11/RF01W-S.jpg",
-    "image2": "https://qpp-ep.com/wp-content/uploads/2022/11/RF01W.jpg",
-    "category": "Material",
-    "subCategory": "Stainless Steel",
-    "designCategory": "Traditional category"
-  },
-  {
-    "name": "Regular Pearl",
-    "image": "https://qpp-ep.com/wp-content/uploads/2022/11/RP17Y-S.jpg",
-    "image2": "https://qpp-ep.com/wp-content/uploads/2022/11/RP17Y.jpg",
-    "category": "Material",
-    "subCategory": "Gold Plated",
-    "designCategory": "Click Category"
-  },
-  {
-    "name": "Regular Pearl Stainless Steel",
-    "image": "https://qpp-ep.com/wp-content/uploads/2023/05/RP17W-S-2048x2048.jpg",
-    "image2": "https://qpp-ep.com/wp-content/uploads/2022/11/RP17W.jpg",
-    "category": "Material",
-    "subCategory": "Stainless Steel",
-    "designCategory": "Traditional category"
-  },
+
+
+
   {
     "name": "Regular Shape",
     "image": "https://qpp-ep.com/wp-content/uploads/2022/11/R00Y-S.jpg",
