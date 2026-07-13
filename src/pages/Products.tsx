@@ -30,6 +30,7 @@ export default function Products() {
                 alt="Traditional Piercing Instrument" 
                 className="max-w-[70%] max-h-[85%] object-contain transform group-hover:scale-105 transition-all duration-500"
                 referrerPolicy="no-referrer"
+                data-no-visual-search="true"
               />
             </div>
             {/* Label at bottom */}
@@ -54,6 +55,7 @@ export default function Products() {
                 alt="Click Disposable Piercing System" 
                 className="max-w-[70%] max-h-[85%] object-contain transform group-hover:scale-105 transition-all duration-500"
                 referrerPolicy="no-referrer"
+                data-no-visual-search="true"
               />
             </div>
             {/* Label at bottom */}
@@ -78,6 +80,7 @@ export default function Products() {
                 alt="Blief Sterilized Studs" 
                 className="max-w-[70%] max-h-[85%] object-contain transform group-hover:scale-105 transition-all duration-500"
                 referrerPolicy="no-referrer"
+                data-no-visual-search="true"
               />
             </div>
             {/* Label at bottom */}
