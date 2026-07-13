@@ -15,7 +15,7 @@ export default function PrivacyPolicy() {
         <div className="bg-white border border-gray-100 p-8 sm:p-12 rounded-[32px] space-y-6 text-brand-paragraph leading-relaxed">
           <h2 className="text-2xl sm:text-3xl font-extrabold text-brand-heading mb-4">Privacy & Data Governance</h2>
           <p className="text-sm sm:text-base">
-            This Privacy Policy governs the manner in which **Precise Piercing Products India LLP** collects, uses, maintains, and discloses information collected from users of the website `https://precisepiercing.com`. This policy applies to the site and all corporate product distribution lines and training certification registrations offered.
+            This Privacy Policy governs the manner in which **Precise Piercing Products India LLP** collects, uses, maintains, and discloses information collected from users of the website `https://precisepiercing.in`. This policy applies to the site and all corporate product distribution lines and training certification registrations offered.
           </p>
 
           <h3 className="text-lg font-bold text-brand-heading mt-6">Personal Identification Data</h3>
@@ -30,7 +30,7 @@ export default function PrivacyPolicy() {
 
           <h3 className="text-lg font-bold text-brand-heading mt-6">Contact Us</h3>
           <p className="text-sm">
-            If you have any questions or require modifications to your corporate records, please email our Delhi board of directors at: <strong className="text-brand-heading">info@precisepiercing.com</strong>.
+            If you have any questions or require modifications to your corporate records, please email our Delhi board of directors at: <strong className="text-brand-heading">info@precisepiercing.in</strong>.
           </p>
         </div>
       </section>

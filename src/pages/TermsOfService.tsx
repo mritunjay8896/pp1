@@ -15,7 +15,7 @@ export default function TermsOfService() {
         <div className="bg-white border border-gray-100 p-8 sm:p-12 rounded-[32px] space-y-6 text-brand-paragraph leading-relaxed">
           <h2 className="text-2xl sm:text-3xl font-extrabold text-brand-heading mb-4">Terms and Wholesale Distribution Conditions</h2>
           <p className="text-sm sm:text-base">
-            Welcome to `https://precisepiercing.com`. By accessing this corporate web portal, you agree to comply with and be bound by the following terms of service governing all transactions, product orders, and training registrations.
+            Welcome to `https://precisepiercing.in`. By accessing this corporate web portal, you agree to comply with and be bound by the following terms of service governing all transactions, product orders, and training registrations.
           </p>
 
           <h3 className="text-lg font-bold text-brand-heading mt-6">Sole Authorized Distribution Rights</h3>

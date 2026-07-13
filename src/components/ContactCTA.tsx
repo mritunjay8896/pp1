@@ -51,7 +51,7 @@ export default function ContactCTA() {
               </div>
               <div className="text-left">
                 <p className="text-xs text-brand-muted font-bold uppercase tracking-wider">Email Inquiry</p>
-                <p className="text-base font-extrabold text-brand-heading mt-0.5">info@precisepiercing.com</p>
+                <p className="text-base font-extrabold text-brand-heading mt-0.5">info@precisepiercing.in</p>
               </div>
             </div>
           </div>

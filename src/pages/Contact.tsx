@@ -106,7 +106,7 @@ export default function Contact() {
                 <div>
                   <h4 className="font-extrabold text-brand-heading text-sm uppercase tracking-wide">Licensing & Operations</h4>
                   <p className="text-sm sm:text-base text-brand-paragraph leading-relaxed mt-1">
-                    info@precisepiercing.com
+                    info@precisepiercing.in
                   </p>
                 </div>
               </div>

@@ -87,7 +87,7 @@ export default function Footer() {
               </li>
               <li className="flex items-center gap-2 text-brand-paragraph text-xs">
                 <Mail className="w-3.5 h-3.5 text-brand-primary flex-shrink-0" />
-                <span>info@precisepiercing.com</span>
+                <span>info@precisepiercing.in</span>
               </li>
             </ul>
           </div>
