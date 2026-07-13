@@ -57,6 +57,9 @@ export default function Footer() {
               <li>
                 <Link to="/products" className="text-brand-paragraph hover:text-brand-primary transition-colors text-sm font-semibold">Product Catalog</Link>
               </li>
+              <li>
+                <Link to="/gallery" className="text-brand-paragraph hover:text-brand-primary transition-colors text-sm font-semibold">Media Gallery</Link>
+              </li>
             </ul>
           </div>
 

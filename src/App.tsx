@@ -18,6 +18,7 @@ import Traditional from './pages/Traditional';
 import Catalog from './pages/Catalog';
 import ProductDetails from './pages/ProductDetails';
 import Downloads from './pages/Downloads';
+import Gallery from './pages/Gallery';
 import FAQ from './pages/FAQ';
 import Contact from './pages/Contact';
 import PrivacyPolicy from './pages/PrivacyPolicy';
@@ -55,6 +56,7 @@ export default function App() {
             <Route path="/products/catalog" element={<Catalog />} />
             <Route path="/products/:slug" element={<ProductDetails />} />
             <Route path="/downloads" element={<Downloads />} />
+            <Route path="/gallery" element={<Gallery />} />
             <Route path="/faq" element={<FAQ />} />
             <Route path="/contact" element={<Contact />} />
             <Route path="/privacy-policy" element={<PrivacyPolicy />} />

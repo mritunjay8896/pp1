@@ -15,6 +15,11 @@ import { getProducts, isFirebaseConfigured } from '../db/firebase';
 import { Product } from '../types';
 import { CATALOG_PRODUCTS } from '../data/catalog_products';
 
+// Import images for the Gallery promo section
+import medicalPiercingInstrument from '../assets/images/medical_piercing_instrument_1783442621750.jpg';
+import goldHeartStudEarring from '../assets/images/gold_heart_stud_earring_1783442578611.jpg';
+import earringSafetyClasp from '../assets/images/earring_safety_clasp_1783946520560.jpg';
+
 export default function Home() {
   const [featuredProducts, setFeaturedProducts] = useState<Product[]>([]);
   const [loading, setLoading] = useState(true);
@@ -218,6 +223,57 @@ export default function Home() {
               </div>
             </Link>
           ))}
+        </div>
+      </section>
+
+      {/* 5. Media Gallery CTA Section */}
+      <section id="gallery-promo-section" className="max-w-[1440px] mx-auto px-4 sm:px-8 md:px-16 lg:px-16">
+        <div className="bg-gradient-to-br from-[#16213E] to-[#1F305E] text-white rounded-[40px] p-8 sm:p-12 lg:p-16 shadow-xl relative overflow-hidden">
+          {/* Subtle decoration elements */}
+          <div className="absolute top-0 right-0 w-80 h-80 bg-brand-primary/10 rounded-full blur-3xl pointer-events-none" />
+          <div className="absolute bottom-0 left-10 w-60 h-60 bg-blue-500/5 rounded-full blur-2xl pointer-events-none" />
+
+          <div className="relative z-10 grid grid-cols-1 lg:grid-cols-12 gap-10 items-center">
+            <div className="lg:col-span-7 space-y-6 animate-fade-in">
+              <span className="text-xs font-black uppercase tracking-widest text-[#FB8964] bg-[#FB8964]/10 px-4 py-2 rounded-full inline-block">
+                Exclusive Media Resources
+              </span>
+              <h2 className="text-3xl sm:text-4xl lg:text-5xl font-extrabold tracking-tight leading-tight">
+                Explore Our Sterile Product Media Gallery
+              </h2>
+              <p className="text-sm sm:text-base text-gray-300 leading-relaxed max-w-xl">
+                Gain instant access to high-resolution visual spec sheets, official branding elements, and step-by-step clinical cassette installation protocols. Designed exclusively for professional dermatologists, pediatricians, and authorized distributors.
+              </p>
+              <div className="pt-4">
+                <Link
+                  to="/gallery"
+                  className="px-8 py-4 rounded-full bg-white hover:bg-gray-100 text-brand-heading font-extrabold text-xs tracking-wider uppercase transition-all duration-300 shadow-md hover:scale-[1.02] inline-flex items-center gap-2"
+                >
+                  <span>Browse Media Gallery</span>
+                  <ArrowRight className="w-4 h-4 text-brand-primary" />
+                </Link>
+              </div>
+            </div>
+
+            {/* Right side: visual stacked preview cards of images! */}
+            <div className="lg:col-span-5 flex justify-center lg:justify-end">
+              <div className="relative w-72 h-72 sm:w-80 sm:h-80 flex items-center justify-center">
+                {/* Visual stacked card deck effect using native images! */}
+                <div 
+                  style={{ backgroundImage: `url(${medicalPiercingInstrument})`, backgroundSize: 'contain', backgroundPosition: 'center', backgroundRepeat: 'no-repeat' }}
+                  className="absolute w-44 h-44 sm:w-52 sm:h-52 bg-white rounded-3xl p-4 shadow-2xl border border-gray-100 transform -rotate-12 -translate-x-12 translate-y-4 hover:rotate-0 transition-all duration-300 z-10"
+                />
+                <div 
+                  style={{ backgroundImage: `url(${goldHeartStudEarring})`, backgroundSize: 'contain', backgroundPosition: 'center', backgroundRepeat: 'no-repeat' }}
+                  className="absolute w-44 h-44 sm:w-52 sm:h-52 bg-white rounded-3xl p-4 shadow-2xl border border-gray-100 transform rotate-12 translate-x-12 -translate-y-4 hover:rotate-0 transition-all duration-300 z-20"
+                />
+                <div 
+                  style={{ backgroundImage: `url(${earringSafetyClasp})`, backgroundSize: 'contain', backgroundPosition: 'center', backgroundRepeat: 'no-repeat' }}
+                  className="absolute w-48 h-48 sm:w-56 sm:h-56 bg-white rounded-3xl p-4 shadow-2xl border border-gray-100 transform hover:scale-105 transition-all duration-300 z-30 flex items-center justify-center"
+                />
+              </div>
+            </div>
+          </div>
         </div>
       </section>
 

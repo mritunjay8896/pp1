@@ -25,6 +25,7 @@ export default function Header() {
       ]
     },
     { name: 'Product', path: '/products' },
+    { name: 'Gallery', path: '/gallery' },
     { name: 'Contact Us', path: '/contact' }
   ];
 
