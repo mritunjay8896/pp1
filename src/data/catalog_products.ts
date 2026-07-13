@@ -47,7 +47,7 @@ export const CATALOG_PRODUCTS: CatalogProduct[] = [
     "designCategory": "Blief Collection"
   },
   {
-    "name": "Chapton 2MM Crystal",
+    "name": "Chapton 2MM Crystal CT204Y",
     "image": "https://qpp-ep.com/wp-content/uploads/2023/05/CT0204Y-mini-round-diamond-side-2048x2048.jpg",
     "image2": "https://qpp-ep.com/wp-content/uploads/2023/05/CT0204Y-mini-round-diamond-front-2048x2048.jpg",
     "category": "Material",
@@ -55,7 +55,7 @@ export const CATALOG_PRODUCTS: CatalogProduct[] = [
     "designCategory": "Click Category"
   },
   {
-    "name": "Chapton 3MM Crystal",
+    "name": "Chapton 3MM Crystal CT304Y",
     "image": "https://qpp-ep.com/wp-content/uploads/2023/05/CT0304Y-medium-round-diamond-side-2048x2048.jpg",
     "image2": "https://qpp-ep.com/wp-content/uploads/2023/05/CT0304Y-medium-round-diamond-front-2048x2048.jpg",
     "category": "Material",
@@ -63,7 +63,7 @@ export const CATALOG_PRODUCTS: CatalogProduct[] = [
     "designCategory": "Click Category"
   },
   {
-    "name": "Chapton 4MM Crystal",
+    "name": "Chapton 4MM Crystal CT404Y",
     "image": "https://qpp-ep.com/wp-content/uploads/2023/05/CT0404Y-big-round-diamond-side-2048x2048.jpg",
     "image2": "https://qpp-ep.com/wp-content/uploads/2023/05/CT0404Y-big-round-diamond-front-2048x2048.jpg",
     "category": "Material",
@@ -87,7 +87,7 @@ export const CATALOG_PRODUCTS: CatalogProduct[] = [
     "designCategory": "Blief Collection"
   },
   {
-    "name": "Crystal Ball 4MM",
+    "name": "Crystal Ball 4MM CD1404Y",
     "image": "https://qpp-ep.com/wp-content/uploads/2023/05/Ball-with-diamond_Y_S-2048x2048.jpg",
     "image2": "https://qpp-ep.com/wp-content/uploads/2023/05/Ball-with-diamond_Y-2048x2048.jpg",
     "category": "Material",
@@ -95,7 +95,7 @@ export const CATALOG_PRODUCTS: CatalogProduct[] = [
     "designCategory": "Click Category"
   },
   {
-    "name": "Crystallize Crystal",
+    "name": "Crystallize Crystal CD0404Y",
     "image": "https://qpp-ep.com/wp-content/uploads/2023/05/CD04Y-middle-white-diamond-side-2048x2048.jpg",
     "image2": "https://qpp-ep.com/wp-content/uploads/2023/05/CD04Y-middle-white-diamond-front-new-2048x2048.jpg",
     "category": "Material",
@@ -103,7 +103,7 @@ export const CATALOG_PRODUCTS: CatalogProduct[] = [
     "designCategory": "Click Category"
   },
   {
-    "name": "Crystallize Jet",
+    "name": "Crystallize Jet CD1404Y",
     "image": "https://qpp-ep.com/wp-content/uploads/2023/05/CD14Y-middle-black-diamond-side-2048x2048.jpg",
     "image2": "https://qpp-ep.com/wp-content/uploads/2023/05/CD14Y-middle-black-diamond-front-new-2048x2048.jpg",
     "category": "Material",
@@ -111,7 +111,7 @@ export const CATALOG_PRODUCTS: CatalogProduct[] = [
     "designCategory": "Click Category"
   },
   {
-    "name": "Crystallize Rose",
+    "name": "Crystallize Rose CD1004Y",
     "image": "https://qpp-ep.com/wp-content/uploads/2023/05/CD10Y-middle-pink-diamond-side@3x-2048x2048.jpg",
     "image2": "https://qpp-ep.com/wp-content/uploads/2023/05/CD10Y-middle-pink-diamond-front-new-2048x2048.jpg",
     "category": "Material",
@@ -175,7 +175,7 @@ export const CATALOG_PRODUCTS: CatalogProduct[] = [
     "designCategory": "Blief Collection"
   },
   {
-    "name": "Floral Blossom",
+    "name": "Floral Blossom DS01Y",
     "image": "https://qpp-ep.com/wp-content/uploads/2023/10/E004CRY.jpg",
     "image2": "https://qpp-ep.com/wp-content/uploads/2023/10/E004CRY-2.jpg",
     "category": "Material",
@@ -278,22 +278,8 @@ export const CATALOG_PRODUCTS: CatalogProduct[] = [
     "subCategory": "Gold Plated",
     "designCategory": "Click Category"
   },
-  {
-    "name": "Large Candy",
-    "image": "https://qpp-ep.com/wp-content/uploads/2022/11/LM04Y-S.jpg",
-    "image2": "https://qpp-ep.com/wp-content/uploads/2022/11/LM04Y.jpg",
-    "category": "Material",
-    "subCategory": "Gold Plated",
-    "designCategory": "Click Category, Traditional category"
-  },
-  {
-    "name": "Large Candy Stainless Steel",
-    "image": "https://qpp-ep.com/wp-content/uploads/2022/11/LM04W-S.jpg",
-    "image2": "https://qpp-ep.com/wp-content/uploads/2022/11/LM04W.jpg",
-    "category": "Material",
-    "subCategory": "Stainless Steel",
-    "designCategory": "Traditional category"
-  },
+
+
   {
     "name": "Large Cubic Zirconia",
     "image": "https://qpp-ep.com/wp-content/uploads/2022/11/LC04Y-S.jpg",
@@ -423,7 +409,7 @@ export const CATALOG_PRODUCTS: CatalogProduct[] = [
     "designCategory": "Traditional category"
   },
   {
-    "name": "Nose Gold Plated",
+    "name": "Nose Gold Plated NB04Y",
     "image": "https://qpp-ep.com/wp-content/uploads/2022/11/NB04Y.jpg",
     "image2": "",
     "category": "Material",
@@ -431,7 +417,7 @@ export const CATALOG_PRODUCTS: CatalogProduct[] = [
     "designCategory": "Traditional category"
   },
   {
-    "name": "Nose Stainless Steel",
+    "name": "Nose Stainless Steel NB07Y",
     "image": "https://qpp-ep.com/wp-content/uploads/2022/11/NB04W.jpg",
     "image2": "",
     "category": "Material",
@@ -439,7 +425,7 @@ export const CATALOG_PRODUCTS: CatalogProduct[] = [
     "designCategory": "Traditional category"
   },
   {
-    "name": "Nose Stud",
+    "name": "Nose Stud NB04Y",
     "image": "https://qpp-ep.com/wp-content/uploads/2023/05/NB04Y-300x300.jpg",
     "image2": "",
     "category": "Material",
@@ -447,7 +433,7 @@ export const CATALOG_PRODUCTS: CatalogProduct[] = [
     "designCategory": "Traditional category"
   },
   {
-    "name": "Nose Stud - Metal Ball",
+    "name": "Nose Stud - Metal Ball NB00Y",
     "image": "https://qpp-ep.com/wp-content/uploads/2023/05/NB00Y-300x300.jpg",
     "image2": "",
     "category": "Material",
