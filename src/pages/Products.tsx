@@ -6,6 +6,28 @@
 import React from 'react';
 import { useNavigate } from 'react-router-dom';
 
+interface ProductBgImageProps {
+  src: string;
+  alt: string;
+  className?: string;
+}
+
+function ProductBgImage({ src, alt, className = '' }: ProductBgImageProps) {
+  return (
+    <div
+      role="img"
+      aria-label={alt}
+      style={{
+        backgroundImage: `url(${src})`,
+        backgroundPosition: 'center',
+        backgroundRepeat: 'no-repeat',
+        backgroundSize: 'contain',
+      }}
+      className={`aspect-square w-full h-full max-w-[70%] max-h-[85%] transform transition-all duration-500 ${className}`}
+    />
+  );
+}
+
 export default function Products() {
   const navigate = useNavigate();
 
@@ -25,12 +47,10 @@ export default function Products() {
           >
             {/* Image container */}
             <div className="flex-grow flex items-center justify-center w-full max-h-[75%]">
-              <img 
+              <ProductBgImage 
                 src="https://qpp-ep.com/wp-content/uploads/2023/05/D22-1536x1536.png" 
                 alt="Traditional Piercing Instrument" 
-                className="max-w-[70%] max-h-[85%] object-contain transform group-hover:scale-105 transition-all duration-500"
-                referrerPolicy="no-referrer"
-                data-no-visual-search="true"
+                className="group-hover:scale-105"
               />
             </div>
             {/* Label at bottom */}
@@ -50,12 +70,10 @@ export default function Products() {
           >
             {/* Image container */}
             <div className="flex-grow flex items-center justify-center w-full max-h-[75%]">
-              <img 
+              <ProductBgImage 
                 src="https://qpp-ep.com/wp-content/uploads/2023/05/Piercing-Gun-Click-1536x1536.png" 
                 alt="Click Disposable Piercing System" 
-                className="max-w-[70%] max-h-[85%] object-contain transform group-hover:scale-105 transition-all duration-500"
-                referrerPolicy="no-referrer"
-                data-no-visual-search="true"
+                className="group-hover:scale-105"
               />
             </div>
             {/* Label at bottom */}
@@ -75,12 +93,10 @@ export default function Products() {
           >
             {/* Image container */}
             <div className="flex-grow flex items-center justify-center w-full max-h-[75%]">
-              <img 
+              <ProductBgImage 
                 src="https://qpp-ep.com/wp-content/uploads/2023/11/Untitled-122-1-768x768.jpg" 
                 alt="Blief Sterilized Studs" 
-                className="max-w-[70%] max-h-[85%] object-contain transform group-hover:scale-105 transition-all duration-500"
-                referrerPolicy="no-referrer"
-                data-no-visual-search="true"
+                className="group-hover:scale-105"
               />
             </div>
             {/* Label at bottom */}
